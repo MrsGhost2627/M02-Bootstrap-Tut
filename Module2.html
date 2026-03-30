@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Good Vibes Log – Bootstrap Lab</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background-color: #fffbf5;
+      font-family: Georgia, serif;
+    }
+
+    header {
+      background-color: #ffcc80;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #4a2e00;
+    }
+
+    header p {
+      color: #6b4200;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4a2e00;
+      border-bottom: 3px solid #ffcc80;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .technique-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #999;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>☀️ Good Vibes Log</h1>
+    <p>A Bootstrap 5 Lab – M02 | Three Techniques Showcase</p>
+  </header>
+
+  <div class="container">
+
+    <!-- ===================== TECHNIQUE 1: BUTTONS ===================== -->
+    <section>
+      <p class="technique-label">Technique 1</p>
+      <h2 class="section-title">Bootstrap Buttons</h2>
+      <p>Bootstrap gives us pre-styled buttons with simple class names. Great for calls-to-action, navigation, and interactive elements.</p>
+
+      <div class="d-flex flex-wrap gap-3">
+        <button type="button" class="btn btn-primary">Read Latest Post</button>
+        <button type="button" class="btn btn-success">Subscribe</button>
+        <button type="button" class="btn btn-warning">See Recipes</button>
+        <button type="button" class="btn btn-danger">Unsubscribe</button>
+        <button type="button" class="btn btn-outline-dark">About Me</button>
+        <button type="button" class="btn btn-secondary btn-lg">Explore All Posts</button>
+      </div>
+    </section>
+
+    <!-- ===================== TECHNIQUE 2: CARDS ===================== -->
+    <section style="background-color: #fff8ee; border-radius: 12px;">
+      <p class="technique-label">Technique 2</p>
+      <h2 class="section-title">Bootstrap Cards</h2>
+      <p>Cards are flexible content containers. Perfect for blog post previews, product highlights, or any grouped content.</p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🌿 Morning Routines That Slap</h5>
+              <p class="card-text">Small habits that changed my whole day — no 5 AM alarm required.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-outline-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🍋 Lazy Lemon Pasta Recipe</h5>
+              <p class="card-text">Five ingredients, one pot, twenty minutes. Good food doesn't have to be complicated.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-outline-warning">Get Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">✨ Fave Finds This Month</h5>
+              <p class="card-text">Books, snacks, apps, and random things that made life a little better lately.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-outline-success">See Finds</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== TECHNIQUE 3: BADGES ===================== -->
+    <section>
+      <p class="technique-label">Technique 3</p>
+      <h2 class="section-title">Bootstrap Badges</h2>
+      <p>Badges are small labels used to highlight categories, notification counts, or status tags. Super handy for blogs!</p>
+
+      <div class="mb-4">
+        <h5>Post Categories</h5>
+        <span class="badge bg-primary me-2">Lifestyle</span>
+        <span class="badge bg-success me-2">Recipes</span>
+        <span class="badge bg-warning text-dark me-2">Wellness</span>
+        <span class="badge bg-danger me-2">Faves</span>
+        <span class="badge bg-dark me-2">Tech</span>
+        <span class="badge bg-secondary">Travel</span>
+      </div>
+
+      <div class="mb-4">
+        <h5>Notification Example</h5>
+        <button type="button" class="btn btn-primary me-3">
+          Comments <span class="badge bg-light text-dark">12</span>
+        </button>
+        <button type="button" class="btn btn-warning">
+          New Posts <span class="badge bg-dark">3</span>
+        </button>
+      </div>
+
+      <div>
+        <h5>Status Tags on Posts</h5>
+        <ul class="list-group" style="max-width: 400px;">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Morning Routines That Slap
+            <span class="badge bg-success">Published</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            My Skincare Journey
+            <span class="badge bg-warning text-dark">Draft</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Best Road Trip Snacks
+            <span class="badge bg-secondary">Coming Soon</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
